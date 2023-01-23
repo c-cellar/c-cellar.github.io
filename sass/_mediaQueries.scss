@@ -1,0 +1,257 @@
+/****************************** MEDIA QUERY *****************************************************************/
+@media screen and (min-width: 1280px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  section {
+    &.wordle {
+      flex-direction: row-reverse;
+      margin-bottom: 150px;
+    }
+
+    &.just-random {
+      flex-direction: row;
+      margin-bottom: 150px;
+    }
+
+    .project-description {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (992px <= width <= 1280px) {
+  body {
+    width: 72%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (768px <= width <= 992px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    grid-area: header;
+    height: 100vh;
+
+    position: relative;
+
+    gap: 20px;
+
+    .skills {
+      opacity: 1;
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+    }
+
+    .frame-picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 170px;
+      height: 170px;
+      overflow: hidden;
+      border-radius: 50%;
+
+      position: relative;
+
+      .frame-picture-round {
+        width: 158px;
+        height: 158px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        position: absolute;
+      }
+
+      img {
+        border-radius: 50%;
+        position: absolute;
+        width: 180%;
+        right: -50px;
+        top: -20px;
+        opacity: 0;
+        filter: grayscale(100%);
+
+        animation: profile-picture ease 1s forwards 6s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    padding: 0 3.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header header header header'
+      'main main main main'
+      'main main main main'
+      'footer footer footer footer';
+  }
+
+  header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    grid-area: header;
+    height: 100vh;
+
+    position: relative;
+
+    gap: 20px;
+
+    .skills {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+    }
+
+    .frame-picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 170px;
+      height: 170px;
+      overflow: hidden;
+      border-radius: 50%;
+
+      position: relative;
+
+      .frame-picture-round {
+        width: 158px;
+        height: 158px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        position: absolute;
+      }
+
+      img {
+        border-radius: 50%;
+        position: absolute;
+        width: 180%;
+        right: -50px;
+        top: -20px;
+        opacity: 0;
+        filter: grayscale(100%);
+
+        animation: profile-picture linear 1s forwards 6s;
+      }
+    }
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle-shape {
+    stroke: cadetblue;
+    stroke-dasharray: 0 540;
+    stroke-dashoffset: -474;
+    stroke-width: 1px;
+    fill: url('/img/IMG_4329_ohne_klein.jpg');
+    fill-opacity: 0;
+    border-radius: 100%;
+
+    animation: svg-stroke linear 2s forwards 4s;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    min-height: 200px;
+    grid-area: footer;
+  }
+
+  section {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+
+    .project-description {
+      margin: 2rem;
+    }
+  }
+
+  .wrapper-pictures {
+    position: relative;
+    border: solid 2px rgb(255, 255, 255);
+
+    picture {
+      display: block;
+      position: relative;
+      text-align: center;
+      border: solid 2px rgb(146, 145, 145);
+
+      img {
+        max-width: 60%;
+        height: auto;
+
+        border: solid 2px cadetblue;
+      }
+    }
+  }
+
+  picture:nth-child(even) {
+    position: absolute;
+    bottom: -3rem;
+    right: 7rem;
+
+    max-width: 21%;
+    height: auto;
+  }
+}
+
+@keyframes profile-picture {
+  to {
+    position: absolute;
+    width: 180%;
+    right: -50px;
+    top: -20px;
+    opacity: 1;
+  }
+}
+
+@keyframes svg-stroke {
+  to {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+}
+
+@keyframes skills-animation-mobile {
+  to {
+    opacity: 1;
+  }
+}
