@@ -1,0 +1,88 @@
+h1,
+header > h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  position: relative;
+}
+
+h1::before,
+header > h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  // background: dimgray;
+  background: rgb(230, 225, 225);
+  border-left: 3px solid black;
+  animation: typewrite 1.5s steps(16) forwards 0.5s,
+    blink 0.8s steps(16, end) infinite;
+}
+
+header > h3::before {
+  // background-color: dimgray;
+  background-color: rgb(230, 225, 225);
+  animation: typewrite 2s steps(33) forwards 2s,
+    blink 0.8s steps(16) infinite 3s;
+}
+
+.skills {
+  h4 {
+    position: relative;
+    width: fit-content;
+  }
+
+  div {
+    position: relative;
+    width: fit-content;
+  }
+
+  h4::before,
+  div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  h4::before {
+    // background: dimgray;
+    background-color: rgb(230, 225, 225);
+    animation: typewrite 0.5s steps(6) forwards 6s,
+      blink 0.8s steps(6) infinite 6s;
+  }
+
+  div:nth-child(2)::before {
+    background: dimgray;
+    background-color: rgb(230, 225, 225);
+    animation: typewrite 1s steps(49) forwards 6.5s,
+      blink 0.8s steps(41) infinite 6s;
+  }
+}
+
+@keyframes typewrite {
+  0% {
+    left: 0%;
+    border-left: 2px solid black;
+  }
+
+  99% {
+    border-left: 2px solid black;
+  }
+
+  100% {
+    left: 100%;
+    border-left: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
