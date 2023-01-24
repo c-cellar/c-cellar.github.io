@@ -74,17 +74,18 @@ main {
 }
 
 section {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column-reverse;
   gap: 3rem;
 
   background-color: whitesmoke;
   border: solid 2px black;
-  padding: 1rem;
+
+  padding: 2rem 0.75rem;
 
   .project-description {
-    margin: 2rem;
+    margin: 2rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -92,20 +93,23 @@ section {
     gap: 2rem;
 
     a {
-      width: 60%;
+      max-width: 215px;
+      min-width: 160px;
       text-decoration: none;
       border: solid 2px whitesmoke;
-      padding: 0.5rem;
+      padding: 0.25rem;
       border-radius: 10px;
       text-align: center;
       margin: 0 auto;
       background-color: rgb(32, 32, 32);
-      color: white;
+      color: whitesmoke;
+      line-height: 3rem;
 
-      i {
-        font-size: 2rem;
-        color: white;
-        padding-right: 0.5rem;
+      svg {
+        width: auto;
+        height: auto;
+        fill: whitesmoke;
+        translate: -5px 8px;
       }
     }
   }
@@ -113,19 +117,15 @@ section {
 
 .wrapper-pictures {
   position: relative;
-  // border: solid 2px rgb(255, 255, 255);
 
   picture {
     display: block;
     position: relative;
     text-align: center;
-    // border: solid 2px rgb(146, 145, 145);
 
     img {
       max-width: 60%;
       height: auto;
-
-      // border: solid 2px cadetblue;
     }
   }
 }
@@ -154,12 +154,6 @@ footer {
     margin-bottom: 0;
   }
 
-  a {
-    i {
-      font-size: 3rem;
-    }
-  }
-
   form {
     display: flex;
     flex-direction: column;
@@ -182,23 +176,27 @@ footer {
     input {
       margin: 0 auto 1rem;
       width: 90%;
-      padding: 0.5rem;
+      padding: 0.75rem 0.5rem;
+      border-radius: 5px;
+      border: none;
     }
 
     textarea {
       margin: 0 auto;
       width: 90%;
       padding: 0.5rem;
+      border: none;
     }
 
     button {
       margin: 1rem auto;
       padding: 0.5rem 1rem;
-      font-size: 1em;
+      font-size: 1.25rem;
       background-color: rgb(32, 32, 32);
       color: whitesmoke;
       border-radius: 10px;
       border: 1px solid rgb(32, 32, 32);
+      cursor: pointer;
     }
   }
 }
