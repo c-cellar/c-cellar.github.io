@@ -25,7 +25,7 @@ h1::before {
 header > h3::before {
   // background-color: dimgray;
   background-color: rgb(230, 225, 225);
-  animation: typewrite 1.5s steps(33) forwards 2s,
+  animation: typewrite 1.5s steps(13) forwards 2s,
     blink 0.8s steps(16) infinite 2s;
 }
 
@@ -54,14 +54,14 @@ header > h3::before {
     h4::before {
       // background: dimgray;
       background-color: rgb(230, 225, 225);
-      animation: typewrite 0.5s steps(6) forwards 6s,
+      animation: typewrite 0.5s steps(6) forwards 4s,
         blink 0.8s steps(6) infinite 6s;
     }
 
     div:nth-child(2)::before {
-      background: dimgray;
+      // background: dimgray;
       background-color: rgb(230, 225, 225);
-      animation: typewrite 1s steps(49) forwards 6.5s,
+      animation: typewrite 1s steps(49) forwards 4.5s,
         blink 0.8s steps(41) infinite 6s;
     }
   }
