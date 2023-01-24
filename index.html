@@ -21,20 +21,32 @@
   <body>
     <header>
       <div class="frame-picture">
-        <svg>
+        <svg height="170px" width="170px">
+          <defs>
+            <pattern
+              id="image"
+              x="0"
+              y="0"
+              patternUnits="userSpaceOnUse"
+              height="170"
+              width="170"
+            >
+              <image
+                x="-30"
+                y="-10"
+                href="/img/IMG_4329_ohne_klein.jpg"
+                height="230px"
+                width="230px"
+              ></image>
+            </pattern>
+          </defs>
           <circle
             class="circle-shape"
-            cx="85"
-            ,
             cy="85"
-            ,
+            cx="85"
             r="80"
-            height="160px"
-            width="160px"
+            fill="url(#image)"
           ></circle>
-          <div class="frame-picture-round">
-            <img src="img/IMG_4329_ohne_klein.jpg" alt="picture portfolio" />
-          </div>
         </svg>
       </div>
       <h1>Christian Keller</h1>
