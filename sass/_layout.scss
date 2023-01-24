@@ -24,10 +24,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  a {
-    display: block;
-  }
 }
 
 header {
@@ -88,6 +84,24 @@ section {
     justify-content: space-evenly;
 
     gap: 2rem;
+
+    a {
+      width: 60%;
+      text-decoration: none;
+      border: solid 2px whitesmoke;
+      padding: 0.5rem;
+      border-radius: 10px;
+      text-align: center;
+      margin: 0 auto;
+      background-color: rgb(32, 32, 32);
+      color: white;
+
+      i {
+        font-size: 2rem;
+        color: white;
+        padding-right: 0.5rem;
+      }
+    }
   }
 }
 
