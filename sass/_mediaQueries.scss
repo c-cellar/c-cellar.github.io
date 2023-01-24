@@ -1,43 +1,4 @@
 /****************************** MEDIA QUERY *****************************************************************/
-@media screen and (min-width: 1280px) {
-  body {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  section {
-    &.wordle {
-      flex-direction: row-reverse;
-      margin-bottom: 150px;
-    }
-
-    &.just-random {
-      flex-direction: row;
-      margin-bottom: 150px;
-    }
-
-    .project-description {
-      width: 35%;
-    }
-  }
-}
-
-@media screen and (992px <= width <= 1280px) {
-  body {
-    width: 72%;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
-@media screen and (768px <= width <= 992px) {
-  body {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
 
 @media screen and (min-width: 600px) {
   body {
@@ -81,26 +42,25 @@
     flex-direction: column-reverse;
     gap: 3rem;
 
-    border: solid 2px white;
     // border-radius: 20px;
     // // box-shadow: 5px 10px 5px grey;
   }
 
   .wrapper-pictures {
     position: relative;
-    border: solid 2px rgb(255, 255, 255);
+    // border: solid 2px rgb(255, 255, 255);
 
     picture {
       display: block;
       position: relative;
       text-align: center;
-      border: solid 2px rgb(146, 145, 145);
+      // border: solid 2px rgb(146, 145, 145);
 
       img {
         max-width: 80%;
         height: auto;
 
-        border: solid 2px cadetblue;
+        // border: solid 2px cadetblue;
       }
     }
   }
@@ -122,5 +82,71 @@
 
     max-width: 22%;
     height: auto;
+  }
+
+  footer form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (768px <= width <= 992px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  footer form {
+    max-width: 60%;
+  }
+}
+
+@media screen and (992px <= width <= 1280px) {
+  body {
+    width: 72%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  footer form {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  section {
+    &.wordle {
+      flex-direction: row-reverse;
+      margin-bottom: 150px;
+    }
+
+    &.just-random {
+      flex-direction: row;
+      margin-bottom: 150px;
+    }
+
+    .project-description {
+      width: 35%;
+    }
+  }
+
+  picture:nth-child(even) {
+    position: absolute;
+    bottom: -0.5rem;
+    right: 4rem;
+
+    max-width: 22%;
+    height: auto;
+  }
+
+  footer form {
+    max-width: 40%;
   }
 }
