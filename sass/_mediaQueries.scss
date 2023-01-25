@@ -20,15 +20,24 @@
     gap: 20px;
 
     position: relative;
+
     .skills {
       position: absolute;
       bottom: 50px;
       left: 50px;
+
+      h4 {
+        font-weight: bold;
+      }
     }
   }
 
   main {
     grid-area: main;
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
   }
 
   section {
