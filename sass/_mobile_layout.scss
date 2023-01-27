@@ -27,13 +27,13 @@ h4 {
 }
 
 .project-description {
-  font-family: 'IBM Plex Sans';
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
   background-color: rgb(230, 225, 225);
 
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,6 +50,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 700px;
 
   position: relative;
 
@@ -200,6 +201,8 @@ footer {
       width: 90%;
       padding: 0.5rem;
       border: none;
+      border-radius: 5px;
+      font-family: 'IBM Plex Sans';
     }
 
     button {
