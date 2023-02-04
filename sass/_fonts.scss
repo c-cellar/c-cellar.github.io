@@ -3,9 +3,9 @@
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/ibm-plex-mono-v15-latin/ibm-plex-mono-v15-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../assets/fonts/imb-plex-mono-v15-latin/ibm-plex-mono-v15-latin-regular.eot?#iefix')
+  src: url('../assets/fonts/ibm-plex-mono-v15-latin/ibm-plex-mono-v15-latin-regular.eot'),
+    /* IE9 Compat Modes */
+      url('../assets/fonts/imb-plex-mono-v15-latin/ibm-plex-mono-v15-latin-regular.eot?#iefix')
       format('embedded-opentype'),
     /* IE6-IE8 */
       url('../assets/fonts/ibm-plex-mono-v15-latin/ibm-plex-mono-v15-latin-regular.woff2')
@@ -26,9 +26,9 @@
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/ibm-plex-sans-v14-latin/ibm-plex-sans-v14-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../assets/fonts/ibm-plex-sans-v14-latin/ibm-plex-sans-v14-latin-regular.eot?#iefix')
+  src: url('../assets/fonts/ibm-plex-sans-v14-latin/ibm-plex-sans-v14-latin-regular.eot'),
+    /* IE9 Compat Modes */
+      url('../assets/fonts/ibm-plex-sans-v14-latin/ibm-plex-sans-v14-latin-regular.eot?#iefix')
       format('embedded-opentype'),
     /* IE6-IE8 */
       url('../assets/fonts/ibm-plex-sans-v14-latin/ibm-plex-sans-v14-latin-regular.woff2')
