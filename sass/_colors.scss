@@ -1,0 +1,38 @@
+:root {
+  /* grey-mode */
+  --dark-grey: hsla(0, 0%, 15%, 1);
+  --davys-grey: hsla(0, 0%, 35%, 1);
+  --gray-web: hsla(0, 0%, 50%, 1);
+  --quick-silver: hsla(0, 0%, 65%, 1);
+  --light-gray: hsla(0, 0%, 80%, 1);
+  --cultured: hsla(0, 0%, 95%, 1);
+
+  /**********************************/
+  --rich-black-fogra-29: hsla(202, 85%, 8%, 1);
+  --metallic-seaweed: hsla(187, 32%, 41%, 1);
+  --green-sheen: hsla(169, 24%, 57%, 1);
+  --opal: hsla(175, 20%, 68%, 1);
+  --champagne: hsla(43, 64%, 88%, 1);
+
+  /***********************************/
+  --eggshell: hsla(52, 50%, 91%, 1);
+  --terra-cotta: hsla(13, 68%, 63%, 1);
+  --independence: hsla(234, 20%, 30%, 1);
+  --green-sheen: hsla(151, 24%, 60%, 1);
+  --deep-champagne: hsla(37, 79%, 75%, 1);
+
+  /*************** SELECTED COLORS ********************/
+  --background: var(--davys-grey);
+  --font-main: var(--cultured);
+  --circle-picture: var(--cultured);
+  --background-section: var(--gray-web);
+  --border-section: var(--cultured);
+  --border-button: var(--light-gray);
+  --background-form: var(--gray-web);
+  --border-form: var(--cultured);
+  --background-button: var(--dark-grey);
+  --font-input: var(--dark-grey);
+}
+
+.darkmode {
+}
