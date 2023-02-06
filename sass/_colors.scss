@@ -4,10 +4,13 @@
   --dark-grey-30: hsla(0, 0%, 15%, 0.3);
   --davys-grey: hsla(0, 0%, 35%, 1);
   --gray-web: hsla(0, 0%, 50%, 1);
+  --gray-web-10: hsla(0, 0%, 50%, 0.1);
   --quick-silver: hsla(0, 0%, 65%, 1);
   --light-gray: hsla(0, 0%, 80%, 1);
   --light-grey-10: hsla(0, 0%, 100%, 0.1);
-  --cultured: hsla(0, 0%, 95%, 1);
+  --cultured: rgb(255, 255, 255);
+
+  --grey-10: hsl(0, 0%, 100%, 0.1);
 
   /**********************************/
   --rich-black-fogra-29: hsla(202, 85%, 8%, 1);
@@ -18,22 +21,59 @@
 
   /***********************************/
   --eggshell: hsla(52, 50%, 91%, 1);
+  --eggshell-10: hsla(52, 50%, 91%, 0.1);
   --terra-cotta: hsla(13, 68%, 63%, 1);
   --independence: hsla(234, 20%, 30%, 1);
+  --independence-50: hsla(234, 20%, 30%, 0.5);
+  --independence-30: hsla(234, 20%, 30%, 0.3);
   --green-sheen: hsla(151, 24%, 60%, 1);
+  --green-sheen-10: hsla(151, 24%, 60%, 0.1);
   --deep-champagne: hsla(37, 79%, 75%, 1);
+  --deep-champagne-60: hsla(37, 79%, 75%, 0.6);
 
-  /*************** SELECTED COLORS ********************/
-  --background: var(--davys-grey);
+  /***************** PASTELLE MODE ***************/
   --font-main: var(--cultured);
-  --circle-picture: var(--cultured);
-  --background-section: var(--gray-web);
+  --font-input: var(--dark-grey);
+
+  --background: var(--green-sheen);
+  --background-color2: var(--deep-champagne-60);
+  --background-main: var(--independence-30);
+  --background-section: var(--green-sheen);
+  --background-section-color2: var(--independence-30);
+  --background-footer: var(--independence-30);
+  --background-form: var(--grey-10);
+  --background-form-color2: var(--independence-30);
+  --background-button: var(--dark-grey);
+
   --border-section: var(--cultured);
   --border-button: var(--light-gray);
-  --background-form: var(--gray-web);
   --border-form: var(--cultured);
-  --background-button: var(--dark-grey);
-  --font-input: var(--dark-grey);
+
+  --boxshadow-button: var(--independence);
+  --boxshadow-section: var(--independence-50);
+
+  --circle-picture: var(--cultured);
+
+  // /*************** GREY MODE ********************/
+  // --font-main: var(--cultured);
+  // --font-input: var(--dark-grey);
+
+  // --background: var(--davys-grey);
+  // --background-color2: var(--gray-web);
+  // --background-section: var(--dark-grey-30);
+  // --background-section-color2: var(--light-grey-10);
+  // --background-form: var(--gray-web);
+  // --background-form-color2: var(--light-grey-10);
+  // --background-button: var(--dark-grey);
+
+  // --border-section: var(--cultured);
+  // --border-button: var(--light-gray);
+  // --border-form: var(--cultured);
+
+  // --boxshadow-button: var(--davys-grey);
+  // --boxshadow-section: var(--dark-grey-30);
+
+  // --circle-picture: var(--cultured);
 }
 
 .darkmode {
