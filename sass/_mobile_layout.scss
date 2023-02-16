@@ -42,11 +42,12 @@ body {
 
 header {
   font-family: 'IBM Plex Mono', monospace;
+  height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   min-height: 700px;
   position: relative;
   gap: 40px;
