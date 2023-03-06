@@ -57,25 +57,17 @@ svg {
   stroke: $circle-picture;
   stroke-dasharray: 0 540;
   stroke-dashoffset: -474;
-  stroke-width: 2px;
+  stroke-width: 3px;
   border-radius: 100%;
   fill-opacity: 0;
 
   animation: svg-stroke cubic-bezier(0.78, 0.19, 0.54, 1.05) 1.5s forwards 3.5s;
 }
 
-.skills {
-  opacity: 0;
-  padding: 1rem;
-
-  animation: skills-animation-mobile ease 0.5s forwards 4.5s;
-}
-
 svg {
   width: auto;
   height: auto;
   fill: $circle-picture;
-  translate: -5px 8px;
 }
 
 main {
@@ -83,7 +75,6 @@ main {
   text-align: center;
 
   h2 {
-    // position: absolute;
     font-size: 10rem;
     font-weight: bold;
     color: $white;
@@ -160,25 +151,16 @@ main {
   }
 
   90% {
-    stroke-width: 2px;
+    stroke-width: 3px;
     stroke-dashoffset: 0;
     stroke-dasharray: 760;
-  }
-
-  95% {
     fill-opacity: 0;
   }
 
   100% {
-    stroke-width: 2px;
+    stroke-width: 3px;
     stroke-dashoffset: 0;
     stroke-dasharray: 760;
     fill-opacity: 1;
-  }
-}
-
-@keyframes skills-animation-mobile {
-  to {
-    opacity: 1;
   }
 }
