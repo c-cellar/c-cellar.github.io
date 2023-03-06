@@ -1,0 +1,28 @@
+body {
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.6em;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $scrollbar-thumb;
+  border: solid 0.1em transparent;
+}
+
+body::-webkit-scrollbar-track {
+  width: 1em;
+}
+
+.wrapper-pictures::-webkit-scrollbar-thumb {
+  visibility: hidden;
+  border: solid 0.2rem $white;
+}
+
+.wrapper-pictures:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+  background-color: $prussian-blue;
+}
