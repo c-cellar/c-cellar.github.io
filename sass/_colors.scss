@@ -12,7 +12,7 @@ $grey-10: hsl(0, 0%, 100%, 0.1);
 
 /*************** NEW COlOR PALETTE ********************/
 $barn-red: hsla(0, 100%, 24%, 1);
-$fire-brick: hsla(356, 83%, 41%, 1);
+$fire-brick: hsl(12deg 65% 46%);
 $papaya-whip: rgb(255, 253, 242);
 $prussian-blue: hsla(201, 100%, 14%, 1);
 $air-superiority-blue: hsla(203, 39%, 57%, 1);
@@ -32,10 +32,8 @@ $background-button: $white;
 // $border-section: $;
 $border-button: $fire-brick;
 $text-shadow: $dark-grey-30;
-// $border-form: $papaya-whip;
-// $boxshadow-button: $white;
-// $boxshadow-section: $-30);
-$circle-picture: $prussian-blue;
+$circle-picture: $fire-brick;
+$scrollbar-thumb: $prussian-blue;
 
 // /**********************************/
 // --rich-black-fogra-29: hsla(202, 85%, 8%, 1);
