@@ -1,14 +1,30 @@
 /****************************** MEDIA QUERY *****************************************************************/
-@media screen and (min-width: 600px) {
-}
-/****************************** MEDIA QUERY *****************************************************************/
-@media screen and (768px <= width <= 992px) {
-}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
 
-/****************************** MEDIA QUERY *****************************************************************/
-@media screen and (992px <= width <= 1280px) {
-}
+  main {
+    section {
+      row-gap: 5rem;
+      column-gap: 2rem;
 
-/****************************** MEDIA QUERY *****************************************************************/
-@media screen and (min-width: 1280px) {
+      h3 {
+        margin-left: 2rem;
+      }
+
+      .project-description {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        article {
+          padding: 4em;
+        }
+
+        .project-links {
+          align-self: center;
+        }
+      }
+    }
+  }
 }
