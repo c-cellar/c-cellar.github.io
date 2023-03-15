@@ -19,6 +19,10 @@
 
         article {
           padding: 4em;
+
+          &::before {
+            left: -6rem;
+          }
         }
 
         .project-links {
