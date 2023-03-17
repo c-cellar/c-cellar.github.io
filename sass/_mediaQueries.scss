@@ -32,3 +32,131 @@
     }
   }
 }
+
+@media (hover: hover) {
+  .wrapper-pictures {
+    &:hover {
+      cursor: grab;
+    }
+
+    &:focus {
+      img {
+        filter: grayscale(0);
+      }
+    }
+
+    picture {
+      img {
+        width: auto;
+        height: 20rem;
+        border: 0.75rem solid $border-picture;
+        filter: grayscale(0.7);
+
+        &:hover {
+          filter: grayscale(0);
+          transform: scale(1.1);
+          transition: all 0.25s ease;
+        }
+      }
+    }
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: $font-button;
+    border: 0.25rem solid $border-button;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    line-height: 3rem;
+
+    &:hover {
+      color: $font-link-hover;
+
+      svg {
+        fill: $font-link-hover;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.25rem;
+      background-color: $background-color-hover;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      background-color: $background-color-hover;
+      height: 100%;
+      z-index: -1;
+    }
+
+    svg {
+      translate: -5px 8px;
+      fill: $logo-button;
+    }
+  }
+}
+
+@media (hover: none) {
+  .wrapper-pictures.touched {
+    filter: grayscale(0);
+  }
+
+  .wrapper-pictures {
+    overflow-x: scroll;
+    display: flex;
+    background-color: $background-color-picture-wrapper;
+    user-select: none;
+
+    grid-area: pictures;
+
+    filter: grayscale(0.7);
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: $font-button;
+    border: 0.25rem solid $border-button;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    line-height: 3rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.25rem;
+      background-color: $background-color-hover;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    svg {
+      translate: -5px 8px;
+      fill: $logo-button;
+    }
+  }
+
+  a.touched {
+    color: $font-link-hover;
+    background-color: $background-color-hover;
+    transition: all 0.3s ease-in;
+
+    svg {
+      fill: $svg-link-hover;
+    }
+
+    &::before {
+      background-color: $background-color-hover;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+}
