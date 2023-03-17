@@ -14,7 +14,7 @@ const allPicturesWrapperJustRandom = document.querySelectorAll(
 const pictureWrapperJustRandom = document.querySelector(
   '#wrapper-pictures-justRandom'
 );
-
+const linksButtons = document.querySelectorAll('a');
 const imgs = document.querySelectorAll('img');
 
 imgs.forEach((img) => {
@@ -22,21 +22,45 @@ imgs.forEach((img) => {
 });
 
 /************* EVENTLISTENER ********************************/
+linksButtons.forEach((linkButton) => {
+  linkButton.addEventListener('touchstart', handleTouchstartLink);
+  linkButton.addEventListener('touchend', handleTouchendLink);
+});
+
 allWrapperPictures.forEach((pictureWrapper) => {
   pictureWrapper.addEventListener('mousedown', handleMouseDown);
+  pictureWrapper.addEventListener('touchstart', handleTouchstartPictureWrapper);
+  pictureWrapper.addEventListener('touchend', handleTouchendPictureWrapper);
 });
+
+/******************* Touch event  **********************/
+function handleTouchstartLink(e) {
+  document.getElementById(e.currentTarget.id).classList.add('touched');
+}
+
+function handleTouchendLink(e) {
+  document.getElementById(e.currentTarget.id).classList.remove('touched');
+}
+
+function handleTouchstartPictureWrapper(e) {
+  document.getElementById(e.currentTarget.id).classList.add('touched');
+}
+
+function handleTouchendPictureWrapper(e) {
+  document.getElementById(e.currentTarget.id).classList.remove('touched');
+}
 
 /************* Drag to Scroll ***********************/
 function handleMouseDown(e) {
   e.currentTarget.style.cursor = 'grabbing';
 
   e.currentTarget.addEventListener('mousemove', handleMouseMove);
-
-  // e.currentTarget.addEventListener('mouseleave', handleMouseUp);
-  // e.currentTarget.addEventListener('mouseup', handleMouseUp);
   ['mouseleave', 'mouseup'].forEach((mouseEvent) =>
     e.currentTarget.addEventListener(mouseEvent, handleMouseUp)
   );
+
+  // e.currentTarget.addEventListener('mouseleave', handleMouseUp);
+  // e.currentTarget.addEventListener('mouseup', handleMouseUp);
 }
 
 function handleMouseUp(e) {
