@@ -23,30 +23,26 @@ imgs.forEach((img) => {
 
 /************* EVENTLISTENER ********************************/
 linksButtons.forEach((linkButton) => {
-  linkButton.addEventListener('touchstart', handleTouchstartLink);
-  linkButton.addEventListener('touchend', handleTouchendLink);
+  linkButton.addEventListener('touchstart', handleTouchstart, {
+    passive: 'true',
+  });
+  linkButton.addEventListener('touchend', handleTouchend);
 });
 
 allWrapperPictures.forEach((pictureWrapper) => {
   pictureWrapper.addEventListener('mousedown', handleMouseDown);
-  pictureWrapper.addEventListener('touchstart', handleTouchstartPictureWrapper);
-  pictureWrapper.addEventListener('touchend', handleTouchendPictureWrapper);
+  pictureWrapper.addEventListener('touchstart', handleTouchstart, {
+    passive: 'true',
+  });
+  pictureWrapper.addEventListener('touchend', handleTouchend);
 });
 
 /******************* Touch event  **********************/
-function handleTouchstartLink(e) {
+function handleTouchstart(e) {
   document.getElementById(e.currentTarget.id).classList.add('touched');
 }
 
-function handleTouchendLink(e) {
-  document.getElementById(e.currentTarget.id).classList.remove('touched');
-}
-
-function handleTouchstartPictureWrapper(e) {
-  document.getElementById(e.currentTarget.id).classList.add('touched');
-}
-
-function handleTouchendPictureWrapper(e) {
+function handleTouchend(e) {
   document.getElementById(e.currentTarget.id).classList.remove('touched');
 }
 
